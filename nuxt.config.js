@@ -1,6 +1,9 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 module.exports = {
 	loading: 'components/Loading.vue',
+	router: {
+		linkActiveClass: 'active'
+	},
 	/*
   ** Headers of the page
   */

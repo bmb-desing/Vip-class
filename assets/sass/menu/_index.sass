@@ -1,0 +1,112 @@
+.menu
+  position: fixed
+  z-index: 20
+  top: 60px
+  bottom: 0
+  left: 0
+  transition: width .25s
+  background-color: #fff
+  padding-top: 30px
+  &_small
+    width: 68px
+  &_big
+    width: 230px
+
+  &__list
+    padding: 0
+    margin: 0
+    list-style-type: none
+
+
+  &__item
+    height: 50px
+    line-height: 50px
+    margin: 5px 0
+    a
+      line-height: 50px
+      height: 50px
+      align-items: center
+      position: relative
+      left: 45%
+      display: flex
+      text-decoration: none
+      transition: all .25s
+
+  &__svg
+    height: 24px
+    margin-right: 10px
+    fill: #4d4d4d
+
+  &__text
+    display: none
+    transition: all .25s
+    opacity: 0
+    text-transform: uppercase
+    font-weight: 500
+    letter-spacing: 0.4px
+    +fz(14)
+    color: #4d4d4d
+    line-height: 15px
+    width: 100%
+  &__item:hover
+    .menu
+      &__svg
+        fill: #0e0e0e
+      &__text
+        color: #0e0e0e
+  .active
+    background-color: #d00a05
+    position: relative
+    &::after
+      width: 28px
+      height: 50px
+      content: ''
+      position: absolute
+      right: -28px
+      bottom: 0
+      top: 0
+      background-image: url(~/assets/img/menu-active.png)
+    .menu
+      &__svg
+        fill: #fff
+      &__text
+        color: #fff
+
+.menu
+  &__phone
+    margin-top: 5vh
+    text-align: center
+    transition: all .25s
+    a
+      text-decoration: none
+      color: #121212
+      +fz(18)
+      font-weight: 700
+      transition: font-size .25s
+      letter-spacing: 0.5px
+
+  &__button
+    text-align: center
+    transition: all .25s
+    transform: scale(0)
+    margin-top: 15px
+    button
+      height: 45px
+      line-height: 45px
+      background-color: #00a87a
+      text-align: center
+      border: none
+      display: block
+      margin: 0 auto
+      cursor: pointer
+      color: #fff
+      max-width: 170px
+      width: 100%
+      text-transform: uppercase
+      +fz(12)
+      font-weight: 700
+      letter-spacing: 0.4px
+
+
+@import "empty"
+@import "full"

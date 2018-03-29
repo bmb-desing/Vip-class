@@ -10,6 +10,9 @@ export default {
 	mutations: {
 		mutationMenu: (state) => {
 			return state.showMenu = !state.showMenu
+		},
+		closeMenu: (state) => {
+			return state.showMenu = false
 		}
 	}
 }
