@@ -1,0 +1,76 @@
+.error-page
+  height: auto !important
+  background-image: url(~/assets/img/error-background.jpg)
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  background-position: center
+  &__wrapper
+    height: 100%
+    min-height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+  &__title
+    color: #efefef
+    text-transform: uppercase
+    text-align: center
+    font-weight: 900
+    letter-spacing: 1.2px
+    +fz(48)
+    padding-bottom: 30px
+    margin-bottom: 0
+    margin-top: 0
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row-reverse
+  &__left
+    flex-basis: 277px
+  &__text
+    color: #d2d2d2
+    font-weight: 700
+    +fz(15)
+    letter-spacing: 0.4px
+  &__button
+    display: block
+    width: 100%
+    text-align: center
+    text-decoration: none
+    height: 50px
+    line-height: 50px
+    background-color: #ffffff
+    opacity: .65
+    text-transform: uppercase
+    color: rgba(208, 10, 5, 0.65)
+    +fz(18)
+    font-weight: 700
+    margin-top: 30px
+    transition: all .25s
+    &:hover
+      color: rgba(208, 10, 5, 0.65)
+      opacity: 1
+
+@media screen and (max-width: 992px)
+  .error-page
+    &__container
+      padding: 0 10px
+@media screen and (max-width: 768px)
+  .error-page
+    &__container
+      flex-direction: row
+      flex-wrap: wrap
+    &__left
+      flex-basis: 100%
+      text-align: center
+    &__right
+      text-align: center
+      flex-basis: 100%
+      img
+        width: auto
+        max-width: 100%
+    &__button
+      margin-bottom: 30px
+    &__title
+      +fz(40)

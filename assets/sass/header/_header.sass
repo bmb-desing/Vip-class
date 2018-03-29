@@ -1,0 +1,71 @@
+.header
+  background-color: #fff
+  position: fixed
+  top: 0
+  width: 100%
+  left: 0
+  right: 0
+  &__wrapper
+    margin: 0 5% 0 1%
+    display: flex
+    justify-content: space-between
+    padding: 10px 0
+
+    align-items: center
+  &__right
+    flex-basis: 50%
+    text-align: right
+  &__left
+    flex-basis: 50%
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__center
+    display: none
+.logo
+  display: inline-block
+  padding-left: 40px
+  &__link
+    display: block
+    img
+      vertical-align: middle
+.info
+  text-decoration: none
+  vertical-align: middle
+  &__svg
+    width: 20px
+    transition: all .25s
+    fill: #808080
+  &__text
+    transition: all .25s
+    color: #808080
+    text-transform: uppercase
+    font-weight: 300
+    padding-left: 10px
+    +fz(12)
+    position: relative
+    top: -6px
+.info:hover
+  .info
+    &__svg
+      fill: #da251d
+    &__text
+      color: #da251d
+@media screen and (max-width: 992px)
+  .header__wrapper
+    margin: 0 1%
+@media screen and (max-width: 768px)
+  .header
+    &__left
+      flex-basis: auto
+      .logo
+        display: none
+    &__center
+      display: block
+      flex-basis: auto
+    &__right
+      flex-basis: auto
+  .info
+    &__text
+      display: none
+@import "burger"
