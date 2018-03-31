@@ -28,9 +28,12 @@ module.exports = {
 	/*
   ** Add axios globally
   */
+	plugins: [
+		'~/plugins/vuebar'
+	],
 	build: {
 		extractCSS: true,
-		vendor: ['axios'],
+		vendor: ['axios', 'vuebar'],
 		/*
     ** Run ESLINT on save
     */
