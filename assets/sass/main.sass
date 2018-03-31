@@ -12,5 +12,31 @@ body
   background-color: #000
   line-height: 1.5
   font-size: 16px
+.container
+  padding-left: 68px
+  min-height: 100vh
+  display: flex
+  align-items: stretch
+.section
+  padding-top: 60px
+  flex-basis: 100%
+  display: flex
+  justify-content: center
+  align-items: stretch
 
+  &_image
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: center
+  &__wrapper
+    margin: 0 auto
+    max-width: 1170px
+    width: 100%
+    display: flex
+    align-items: stretch
+
+@media screen and (max-width: 768px)
+  .container
+    padding-left: 0
 @import "form"

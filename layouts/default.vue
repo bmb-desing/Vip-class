@@ -3,10 +3,18 @@
     <div>
         <my-header/>
         <my-menu/>
+        <main class="container" style="background-color: blue;">
+            <div class="section" style="background-color: grey;">
+                <div class="section__wrapper" style="width: 100%;height:200px;background-color: red;">
+                </div>
+            </div>
+
+        </main>
         <nuxt/>
         <transition name="form">
             <user-form v-if="showForm"/>
         </transition>
+
     </div>
 </template>
 
@@ -30,14 +38,4 @@ export default {
 </script>
 
 <style lang="sass">
-    .form-enter
-        opacity: 0
-    .fade-enter-active, .fade-leave-active
-        transition: opacity 1s
-    .fade-enter-active
-        opacity: 1
-    .form-leave
-        opacity: 1
-    .form-leave-active
-        opacity: 0
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="menu" v-bind:class="menuType">
         <ul class="menu__list">
-            <nuxt-link to="/" tag="li" class="menu__item" exact>
+            <nuxt-link to="/" tag="li" class="menu__item" exact @click.native="closeMenu">
                 <a>
                     <svg version="1.1" id="home" class="menu__svg menu__svg_home" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve">
@@ -23,7 +23,7 @@
                     <span class="menu__text">Главная</span>
                 </a>
             </nuxt-link>
-            <nuxt-link to="objects" tag="li" class="menu__item">
+            <nuxt-link to="objects" tag="li" class="menu__item" @click.native="closeMenu">
                 <a>
                     <svg version="1.1" id="building" class="menu__svg menu__svg_building" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 503.607 503.607" style="enable-background:new 0 0 503.607 503.607;" xml:space="preserve">
@@ -97,7 +97,7 @@
                     <span class="menu__text">Объекты</span>
                 </a>
             </nuxt-link>
-            <nuxt-link to="sketching" tag="li" class="menu__item">
+            <nuxt-link to="sketching" tag="li" class="menu__item" @click.native="closeMenu">
                 <a>
                     <svg version="1.1" id="sketch" class="menu__svg menu__svg_sketch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
@@ -155,7 +155,7 @@
                     <span class="menu__text">Проектирование</span>
                 </a>
             </nuxt-link>
-            <nuxt-link to="technadzor" tag="li" class="menu__item">
+            <nuxt-link to="technadzor" tag="li" class="menu__item" @click.native="closeMenu">
                 <a>
                     <svg version="1.1" id="technadzor" class="menu__svg menu__svg_technadzor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 480.042 480.042" style="enable-background:new 0 0 480.042 480.042;" xml:space="preserve">
@@ -192,7 +192,7 @@
                     <span class="menu__text">Технадзор и<br/>Обследование<br/>Зданий</span>
                 </a>
             </nuxt-link>
-            <nuxt-link to="stroitelstvo" tag="li" class="menu__item">
+            <nuxt-link to="stroitelstvo" tag="li" class="menu__item" @click.native="closeMenu">
                 <a>
                     <svg version="1.1" id="stroitelstvo" class="menu__svg menu__svg_stroitelstvo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 59 59" style="enable-background:new 0 0 59 59;" xml:space="preserve">
@@ -272,7 +272,7 @@
                     <span class="menu__text">Строительство</span>
                 </a>
             </nuxt-link>
-            <nuxt-link to="design" tag="li" class="menu__item">
+            <nuxt-link to="design" tag="li" class="menu__item" @click.native="closeMenu">
                 <a>
                     <svg version="1.1" id="design" class="menu__svg menu__svg_design" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -345,7 +345,7 @@
                     <span class="menu__text">Дизайн-проект</span>
                 </a>
             </nuxt-link>
-            <nuxt-link to="contacts" tag="li" class="menu__item">
+            <nuxt-link to="contacts" tag="li" class="menu__item" @click.native="closeMenu">
                 <a>
                     <svg version="1.1" id="contacts" class="menu__svg menu__svg_contacts" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">

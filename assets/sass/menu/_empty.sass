@@ -2,3 +2,15 @@
   .menu
     &__phone
       transform: scale(0)
+@media screen and (max-width: 768px)
+  .menu_small
+    width: 100%
+    left: -100%
+    .menu
+      &__phone
+        transform: scale(1)
+      &__button
+        transform: scale(1)
+      &__text
+        display: block
+        transform: scale(1)

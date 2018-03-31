@@ -2,8 +2,120 @@
   position: fixed
   left: 0
   right: 0
+  transition: opacity .5s
   bottom: 0
   top: 0
   z-index: 10000
   width: 100%
-  background-color: #000
+  background-color: rgba(#000, .7)
+  display: flex
+  align-items: center
+  justify-content: center
+  &__wrapper
+    background-color: #fff
+    position: relative
+    max-width: 370px
+    width: 100%
+    padding-bottom: 70px
+    margin: 0 auto
+  &__cross
+  &__svg
+    position: absolute
+    right: 20px
+    top: 20px
+    height: 20px
+    cursor: pointer
+    path
+      transition: all .25s
+      fill: #323232
+  &__title
+    text-transform: uppercase
+    text-align: center
+    color: #db0d08
+    padding-top: 70px
+    +fz(32)
+    font-weight: 900
+    letter-spacing: 0.8px
+    margin: 0
+  &__text
+    text-align: center
+    margin: 0
+    color: #323232
+    +fz(14)
+    font-weight: 700
+    letter-spacing: 0.4px
+    max-width: 220px
+    margin: 0 auto
+    padding-top: 5px
+    padding-bottom: 20px
+  &__item
+    text-align: center
+    display: block
+    margin: 0 auto 10px
+    input
+      height: 45px
+      line-height: 45px
+      padding: 0 20px
+      border: 1px solid #000000
+      max-width: (315-40)+0px
+      width: 100%
+      &.error
+        border-color: #db0d08
+  &__bold
+    display: block
+    text-align: center
+    color: #1a1a1a
+    +fz(14)
+    letter-spacing: .4px
+    font-weight: 900
+  &__button
+    max-width: 315px
+    width: 100%
+    display: block
+    margin: 20px auto
+    outline: none
+    border: none
+    height: 50px
+    line-height: 50px
+    background-color: #00a87a
+    color: #ffffff
+    text-transform: uppercase
+    +fz(18)
+    font-weight: 700
+    letter-spacing: .5px
+    cursor: pointer
+    transition: all .25s
+    &:hover
+      background-color: darken(#00a87a , 5%)
+  &__error
+    display: block
+    color: #db0d08
+    +fz(12)
+    letter-spacing: 0.3px
+    font-weight: 300
+  &__val
+    text-align: center
+    color: #000000
+    font-weight: 300
+    max-width: 310px
+    width: 100%
+    margin: 0 auto
+    +fz(12)
+    a
+      color: #f54c49
+      text-decoration: none
+.form-enter
+  opacity: 0
+.fade-enter-active
+  opacity: 1
+.form-leave
+  opacity: 1
+.form-leave-active
+  opacity: 0
+
+
+@media screen and (max-height: 650px)
+  .form
+    overflow-y: auto
+  .form__svg
+    top: 50px
