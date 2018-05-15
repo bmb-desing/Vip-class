@@ -4,17 +4,9 @@
         <div class="el2">
             <my-header/>
             <my-menu/>
-            <main class="container" style="background-color: blue;" >
-                <div class="section section_image" style="background-color: grey;background-image: url(/img/bg-index.jpg);" >
-                    <div class="section__wrapper">
-                    </div>
-                </div>
-                <div class="section section_image" style="background-color: grey;background-image: url(/img/bg-index.jpg);" >
-                    <div class="section__wrapper">
-                    </div>
-                </div>
-            </main>
             <nuxt/>
+
+
             <transition name="form">
                 <user-form v-if="showForm"/>
             </transition>

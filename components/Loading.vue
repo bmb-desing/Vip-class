@@ -45,7 +45,8 @@
 				this.loading = true
             },
             finish() {
-				this.loading = false
+                this.loading = false
+                this.loadNumber = 0
             },
             fail() {
 				this.errorText = 'Произошла ошибка при загрузке данных, пожалуйста обновите страницу'

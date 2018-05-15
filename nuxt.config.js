@@ -1,5 +1,8 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 module.exports = {
+	modules: [
+		'@nuxtjs/localtunnel'
+	],
 	loading: 'components/Loading.vue',
 	router: {
 		linkActiveClass: 'active'
@@ -29,7 +32,11 @@ module.exports = {
   ** Add axios globally
   */
 	plugins: [
-		'~/plugins/vuebar'
+		'~/plugins/vuebar',
+		{
+			src: '~/plugins/slider',
+			ssr: false
+		}
 	],
 	build: {
 		extractCSS: true,
